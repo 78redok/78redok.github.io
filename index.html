@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Ko | Home</title>
+    <link rel = "stylesheet" href = "./css/main.css">
+    <script src="button.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hamburger').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <link rel="icon" href="https://uploads-ssl.webflow.com/5f7e22296031655fe1cf628f/5f9c658a3f64e938f5479a98_Hello%20World%20Logo-p-500.png">
+</head>
+<body>
+    <header>
+           <nav>
+               <label class="logo">Richard Ko</label>
+               <ul>
+                   <li class = "current"><a href = "index.html">Home</a></li>
+                   <li><a href = "about.html">About Me</a></li>
+                   <li><a href = "education.html">Education</a></li>
+                   <li><a href = "store.html">Store</a></li>
+               </ul>
+               <label id="hamburger">
+                   <i class="fas fa-bars"></i>
+               </label>
+           </nav>
+    </header>
+
+    <section id = "showcase">
+        <div class = "container_global">
+            <h1>Aspiring Software Developer</h1>
+            <p>Hello! I am currently a student at Santa Monica College with aspiring hopes to become a software developer. While I am still in the beginning stages of my programming journey, I know that the quality education and amazing experience I can receive from the many internship programs I am applying for will become a catalyst for my growth!</p>
+        </div>
+        <button onclick='return download()' class = button_1>Download My Resume!</button>
+    </section>
+    <section id = "boxes">
+        <div class = "container_showcase">
+            <div class = "box">
+                <img src ="./img/html.png">
+                <h3>Web Development</h3>
+                <p>Skill Level: Beginner</p>
+                <p>Able to build a simple website including links, buttons and multiple pages for personal CV websites. Languages Used: html5, css3, javascript.</p>
+            </div>
+            <div class = "box">
+                <img src ="./img/java.png">
+                <h3>Java</h3>
+                <p>Skill Level: Intermediate</p>
+                <p>Intermediate skills include implementing ADT for data structures, sorting algorithms and system design.</p>
+            </div>
+            <div class = "box">
+                <img src ="./img/cpp.png">
+                <h3>C++</h3>
+                <p>Skill Level: Beginner/Intermediate</p>
+                <p>Need to improve understanding on pointers(which pegs me as a beginner), however, still able to implement data structures.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Richard Ko, &copy 2021</p>
+    </footer>
+</body>
+</html>
