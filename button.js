@@ -1,6 +1,7 @@
 function download(){
-    if (confirm ('This Resume is a Work in Progress')) {
-        location.href = './resume.pdf';
+    if (confirm ('Resume access disabled.')) {
+        // location.href = './resume.pdf';
+        return false;
     }
     return false;
 }
