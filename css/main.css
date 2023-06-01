@@ -212,11 +212,9 @@ article#main-col{
 }
 
 #school{
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* edu col*/
@@ -280,4 +278,56 @@ thead, td, tbody, tr{
 #checkout {
     padding: 8px;
     margin: 25px 0;
+}
+
+/* project */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Each project card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Project image */
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Project title */
+.project-title {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Project description */
+.project-description {
+    font-size: 16px;
+    color: #666;
 }
