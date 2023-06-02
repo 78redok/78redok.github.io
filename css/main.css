@@ -307,7 +307,7 @@ thead, td, tbody, tr{
     border-radius: 8px;
     padding: 10px;  /* Reduced from 20px to 10px */
     width: auto;  /* Instead of fixed width, make it auto */
-    max-width: 800px;
+    max-width: 400px;
     transition: box-shadow 0.3s ease;
 }
 
@@ -323,9 +323,11 @@ thead, td, tbody, tr{
 /* Project image */
 .project-image {
     width: 100%;
+    max-height: 200px; /* Add this line to limit the height of the image */
     object-fit: cover;
     border-radius: 5px;
 }
+
 
 /* Project title */
 .project-title {
