@@ -48,6 +48,9 @@
                 }
             }
 
+            // Hide the modal when the page loads
+            modal.style.display = "none";
+
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
                 if (event.target == modal) {
@@ -122,7 +125,7 @@
             </p>
 
             <figure class="proj-img">
-                <img class ="myImg" src="./img/smc.png" alt="Image 2">
+                <img class ="myImg" src="./img/cpp.png" alt="Image 2">
                 <figcaption>Caption for Image 2</figcaption>
             </figure>
         </div>
@@ -131,7 +134,7 @@
     </article>
 </section>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" hidden>
         <img class="modal-content" id="img01">
     </div>
 

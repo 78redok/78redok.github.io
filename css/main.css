@@ -305,8 +305,8 @@ thead, td, tbody, tr{
     gap: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;  /* Reduced from 20px to 10px */
-    width: auto;  /* Instead of fixed width, make it auto */
+    padding: 10px;
+    width: 50%; /* Set the width to 50% of the parent container */
     max-width: 400px;
     transition: box-shadow 0.3s ease;
 }
