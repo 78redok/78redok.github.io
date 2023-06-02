@@ -21,10 +21,10 @@ body{
     padding-bottom: 50px;
 }
 
-.container_showcase{
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
+.container_showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .button_1{
@@ -171,15 +171,23 @@ nav #hamburger{
 
 /* boxes*/
 #boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 #boxes .box{
-    float: left;
     text-align: center;
-    width: 32%;
+    width: 100%;
     padding: 5px;
-    flex: 1;
+    box-sizing: border-box;
+}
+
+@media (min-width: 700px){
+    #boxes .box{
+        width: calc((100% / 3) - 10px * 3); 
+    }
 }
 
 #boxes .box img{
@@ -330,4 +338,60 @@ thead, td, tbody, tr{
 .project-description {
     font-size: 16px;
     color: #666;
+}
+
+/* Proj details */
+#proj-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.proj-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.proj-item-left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.proj-item p {
+    width: 60%;  
+    padding-right: 10px;
+}
+
+.proj-item-left p {
+    width: 60%;  
+    padding-left: 10px;
+}
+
+.proj-img {
+    position: relative;
+    width: 35%;  
+}
+
+.proj-img img {
+    width: 100%;
+    height: auto;
+}
+
+.proj-img figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.proj-img:hover figcaption {
+    background: rgba(0, 0, 0, 0.8);
 }
