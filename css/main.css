@@ -305,8 +305,8 @@ thead, td, tbody, tr{
     gap: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    width: 80%;
+    padding: 10px;  /* Reduced from 20px to 10px */
+    width: auto;  /* Instead of fixed width, make it auto */
     max-width: 800px;
     transition: box-shadow 0.3s ease;
 }
@@ -323,7 +323,6 @@ thead, td, tbody, tr{
 /* Project image */
 .project-image {
     width: 100%;
-    max-width: 300px;
     object-fit: cover;
     border-radius: 5px;
 }
